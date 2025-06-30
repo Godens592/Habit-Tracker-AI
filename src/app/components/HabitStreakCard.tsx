@@ -16,7 +16,7 @@ export function HabitStreakCard({
   bestStreak, 
   lastCompleted
 }: HabitStreakCardProps) {
-  // useState hook example
+  // useState hook example /* i made these changes to the streakHistory array */
   const [isExpanded, setIsExpanded] = useState(false);
   const [motivationMessage, setMotivationMessage] = useState('');
 
@@ -86,7 +86,7 @@ export function HabitStreakCard({
             <p className="text-green-800">{streakStatus}</p>
           </div>
         )}
-
+        
         {/* Array mapping example with key prop */}
         <div className="flex gap-1 mb-4">
           {streakHistory.map((streak, index) => (
@@ -96,6 +96,7 @@ export function HabitStreakCard({
                 w-2 h-2 rounded-full
                 ${streak > 0 ? 'bg-green-500' : 'bg-red-500'}
                 ${index === streakHistory.length - 1 ? 'ring-2 ring-blue-500' : ''}
+                
               `}
             />
           ))}
