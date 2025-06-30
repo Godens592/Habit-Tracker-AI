@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Card from './Card';
-
+// 2 new changes made
 interface HabitStreakCardProps {
   habitName: string;
   currentStreak: number;
