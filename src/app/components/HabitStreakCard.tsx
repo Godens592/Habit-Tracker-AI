@@ -2,14 +2,14 @@
 
 import { useState } from 'react';
 import Card from './Card';
-// 2 new changes made
+
 interface HabitStreakCardProps {
   habitName: string;
   currentStreak: number;
   bestStreak: number;
   lastCompleted: Date;
 }
-
+// changes maade to git 
 export function HabitStreakCard({ 
   habitName, 
   currentStreak, 
