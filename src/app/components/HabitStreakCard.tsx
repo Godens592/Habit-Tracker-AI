@@ -131,4 +131,4 @@ export function HabitStreakCard({
       </div>
     </Card>
   );
-} 
+}
